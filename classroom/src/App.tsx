@@ -1,6 +1,9 @@
 
 import styles from "./app.module.css"
+
+import { Input } from "./components/Input"
 import { Tip } from "./components/Tip"
+import { Button } from "./components/Button"
 import { Letter } from "./components/Letter"
 import { Header } from "./components/Header"
 
@@ -20,6 +23,11 @@ function App() {
           <Letter value="A"/>
           <Letter value="C"/>
           <Letter value="T"/>
+        </div>
+        <h4>Palpite</h4>
+        <div className={styles.guess}>
+          <Input autoFocus maxLength={1} placeholder="?" />
+          <Button title="confirmar" />
         </div>
       </main>
     </div>
